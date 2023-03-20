@@ -1,10 +1,10 @@
 import numpy as np
-import tensorflow as tf
 from keras.datasets import imdb
 from keras_preprocessing import sequence
 from tensorflow import keras
 
-tf.config.set_visible_devices([], 'GPU')
+# Uncomment if your machine is M1 and training the model is taking longer than expected
+# tf.config.set_visible_devices([], 'GPU')
 
 VOCAB_SIZE = 88584
 MAX_LEN = 250
